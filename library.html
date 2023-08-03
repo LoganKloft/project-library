@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <title>Library</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>Project: Library</h1>
+        <!-- add new books -->
+        <div>
+            <div>
+                <form action="" id="form">
+                    <fieldset>
+                        <legend>Custom</legend>
+                        <div>
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" required>
+                        </div>
+                        <div>
+                            <label for="author">Author</label>
+                            <input type="text" name="author" id="author" required>
+                        </div>
+                        <div>
+                            <label for="pages">Pages</label>
+                            <input type="text" name="pages" id="pages" required>
+                        </div>
+                        <div class="checkbox-container">
+                            <label for="read">Read?</label>
+                            <input type="checkbox" name="read" id="read">
+                        </div>
+                        <input type="submit" value="submit" id="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <!-- generate random books -->
+            <fieldset class="random-button-group">
+                <legend>Generated</legend>
+                <button class="random-1">Generate Random (x1)</button>
+                <button class="random-5">Generate Random (x5)</button>
+                <button class="random-10">Generate Random (x10)</button>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- stores added books -->
+    <div class="container">
+    </div>
+    
+    <script src="library.js"></script>
+</body>
+</html>
